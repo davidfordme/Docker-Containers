@@ -1,0 +1,10 @@
+version: '3'
+services:
+    application:
+        build: ./config
+        image: application
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - /Users/ford/htdocs:/var/www/vhosts
